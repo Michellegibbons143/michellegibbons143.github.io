@@ -18,7 +18,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 100;
-    background-color: #555; /* solid dark color */
+    background-color: #222; /* solid dark color */
     border-bottom: none; /* remove previous white border */
 }
 
