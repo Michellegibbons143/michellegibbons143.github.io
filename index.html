@@ -1,75 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Michelle Gibbons | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle Gibbons Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ==================== Header / Hero ==================== -->
-  <header class="hero">
-    <div class="container">
-      <h1>Michelle Gibbons</h1>
-      <p>Data Analyst & Analytics Engineer | Transforming data into insights with elegant dashboards and robust pipelines.</p>
-      <a href="#projects" class="button">View Projects</a>
-    </div>
-  </header>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- ==================== Projects Section ==================== -->
-  <section id="projects" class="section projects">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Hello, I'm Michelle Gibbons</h1>
+        <h2>Data Analyst | Analytics Engineer</h2>
+    </section>
 
-        <div class="project-card">
-          <h3>NYC CitiBike Dashboard</h3>
-          <p>Interactive dashboard analyzing bike usage patterns, trip density, and user behavior with SQL & Power BI.</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-text">
+                <p>I'm a data analyst working across the full analytics stack. I specialize in transforming raw data into scalable systems and actionable insights. With 4+ years of experience, I build end-to-end dashboards, design ETL pipelines, and align metrics across teams to drive strategic decisions.</p>
+                <p>My work spans the full data lifecycle, from engineering Snowflake pipelines and modeling gold-layer fact tables to crafting interactive Power BI dashboards with advanced DAX. I thrive at the intersection of analytics and engineering, where storytelling meets architecture.</p>
+                <p>Whether it's optimizing SQL logic to reduce query time or collaborating with stakeholders to define KPIs, I bring a blend of technical depth and business intuition to every project. Currently pursuing a Master's in Data Science, I’m focused on deepening my expertise and expanding the impact I can deliver through data-driven solutions.</p>
+            </div>
+            <div class="about-image">
+                <img src="your-photo.jpg" alt="Michelle Gibbons">
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-          <h3>MLB Postseason Analysis</h3>
-          <p>Pitch-by-pitch dataset analysis with Python, Pandas, and visualizations to reveal game trends and insights.</p>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <!-- Example project card -->
+            <div class="project-card">
+                <h3>Project Title</h3>
+                <p>Brief description of the project highlighting key work done and impact.</p>
+                <p class="tools">Tools: SQL, Power BI, Python</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project Title</h3>
+                <p>Brief description of the project highlighting key work done and impact.</p>
+                <p class="tools">Tools: SQL, Snowflake, Tableau</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
         </div>
+    </section>
 
-        <div class="project-card">
-          <h3>ELT Pipeline Project</h3>
-          <p>Snowflake and SQL ETL pipelines: Bronze → Silver → Gold layer transformation to clean and unify data.</p>
-        </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out via email or connect with me on LinkedIn.</p>
+        <p>Email: <a href="mailto:michelle@example.com">michelle@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/michellegibbons/" target="_blank">linkedin.com/in/michellegibbons</a></p>
+    </section>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== About Section ==================== -->
-  <section id="about" class="section about">
-    <div class="container">
-      <img src="profile.jpg" alt="Michelle Gibbons">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>I am a data professional with 4+ years of experience designing scalable pipelines, crafting advanced SQL models, and delivering impactful, easy-to-understand dashboards. I focus on clean design, meaningful insights, and elegant execution.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== Contact Section ==================== -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <p>Feel free to reach out via email: <a href="mailto:michelle@example.com">michelle@example.com</a></p>
-      <div class="contact-buttons">
-        <a href="#" class="button">LinkedIn</a>
-        <a href="#" class="button">GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== Footer ==================== -->
-  <footer class="footer">
-    <p>&copy; 2025 Michelle Gibbons. All rights reserved.</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Michelle Gibbons. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
