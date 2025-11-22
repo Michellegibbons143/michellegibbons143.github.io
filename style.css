@@ -89,7 +89,7 @@ header {
 .about-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1000px;   /* keeps layout from stretching too wide */
+    max-width: 1200px;   /* keeps layout from stretching too wide */
     margin: 0 auto;      /* centers the entire section */
     gap: 2rem;
     align-items: center;
@@ -101,14 +101,14 @@ header {
 }
 
 .about-image img {
-    max-width: 400px;
+    max-width: 300px;
     border-radius: 50%;
     border: none;
 }
 
 .about-text {
     flex: 2 1 350px;      /* allows side-by-side more easily */
-    max-width: 550px;     /* keeps text readable instead of stretched */
+    max-width: 700px;     /* keeps text readable instead of stretched */
     text-align: left;
     margin-left: 1.5rem;
 }
