@@ -3,107 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Michelle Gibbons | Data Analyst & Engineer</title>
+  <title>Michelle Gibbons | Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav>
-    <div class="container">
-      <div class="logo">Michelle Gibbons</div>
-      <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="container hero-container">
-      <h1>Hi, I’m Michelle.</h1>
-      <p>I build ETL pipelines, dashboards, and analytics systems.</p>
-      <div class="cta-buttons">
-        <a href="#projects" class="btn-primary">View Projects</a>
-        <a href="resume.pdf" class="btn-secondary">Download Resume</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
+  <!-- ==================== Header / Hero ==================== -->
+  <header class="hero">
     <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill">Python</div>
-        <div class="skill">SQL</div>
-        <div class="skill">Snowflake</div>
-        <div class="skill">dbt</div>
-        <div class="skill">Power BI</div>
-        <div class="skill">Azure</div>
-      </div>
+      <h1>Michelle Gibbons</h1>
+      <p>Data Analyst & Analytics Engineer | Transforming data into insights with elegant dashboards and robust pipelines.</p>
+      <a href="#projects" class="button">View Projects</a>
     </div>
-  </section>
+  </header>
 
-  <!-- Projects Section -->
-  <section id="projects">
+  <!-- ==================== Projects Section ==================== -->
+  <section id="projects" class="section projects">
     <div class="container">
-      <h2>Projects</h2>
+      <h2 class="section-title">Projects</h2>
       <div class="projects-grid">
-        <!-- Example project card -->
+
         <div class="project-card">
-          <h3>ETL Pipeline Dashboard</h3>
-          <p>Built an end-to-end ETL pipeline with Snowflake and dbt to unify business metrics for analytics reporting.</p>
-          <div class="tags">
-            <span>SQL</span>
-            <span>ETL</span>
-            <span>Snowflake</span>
-          </div>
-          <a href="#" class="project-link">View on GitHub →</a>
+          <h3>NYC CitiBike Dashboard</h3>
+          <p>Interactive dashboard analyzing bike usage patterns, trip density, and user behavior with SQL & Power BI.</p>
         </div>
 
         <div class="project-card">
-          <h3>Power BI Sales Dashboard</h3>
-          <p>Interactive dashboard tracking key sales metrics with drill-down functionality and automated refreshes.</p>
-          <div class="tags">
-            <span>Power BI</span>
-            <span>Visualization</span>
-            <span>Data Analytics</span>
-          </div>
-          <a href="#" class="project-link">View on GitHub →</a>
+          <h3>MLB Postseason Analysis</h3>
+          <p>Pitch-by-pitch dataset analysis with Python, Pandas, and visualizations to reveal game trends and insights.</p>
         </div>
 
-        <!-- Add more projects here -->
+        <div class="project-card">
+          <h3>ELT Pipeline Project</h3>
+          <p>Snowflake and SQL ETL pipelines: Bronze → Silver → Gold layer transformation to clean and unify data.</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about">
+  <!-- ==================== About Section ==================== -->
+  <section id="about" class="section about">
     <div class="container">
-      <h2>About Me</h2>
-      <p>I am a data analyst and engineer with 4+ years of experience building scalable pipelines, dashboards, and analytics solutions. I specialize in transforming raw data into actionable insights to support business decision-making.</p>
+      <img src="profile.jpg" alt="Michelle Gibbons">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I am a data professional with 4+ years of experience designing scalable pipelines, crafting advanced SQL models, and delivering impactful, easy-to-understand dashboards. I focus on clean design, meaningful insights, and elegant execution.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
+  <!-- ==================== Contact Section ==================== -->
+  <section id="contact" class="section contact">
     <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:michelle@example.com">michelle@example.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/michellegibbons" target="_blank">linkedin.com/in/michellegibbons</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+      <h2 class="section-title">Contact</h2>
+      <p>Feel free to reach out via email: <a href="mailto:michelle@example.com">michelle@example.com</a></p>
+      <div class="contact-buttons">
+        <a href="#" class="button">LinkedIn</a>
+        <a href="#" class="button">GitHub</a>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Michelle Gibbons</p>
-    </div>
+  <!-- ==================== Footer ==================== -->
+  <footer class="footer">
+    <p>&copy; 2025 Michelle Gibbons. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
