@@ -18,7 +18,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 100;
-    background-color: #222; /* solid dark color */
+    background-color: #222; /* solid dark charcoal */
     border-bottom: none; /* remove previous white border */
 }
 
@@ -26,7 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem; /* reduce vertical padding to make header thinner */
 }
 
 .navbar .logo a,
@@ -34,6 +34,7 @@ header {
     color: #fff; /* white text by default */
     text-decoration: none;
     font-weight: 600;
+    font-size: 0.9rem; /* slightly smaller text for thinner header */
     transition: all 0.3s ease;
 }
 
@@ -48,8 +49,9 @@ header {
 }
 
 .navbar ul li {
-    margin-left: 2rem;
+    margin-left: 1.5rem; /* slightly tighter spacing between links */
 }
+
 
 /* Hero Section */
 .hero {
