@@ -1,26 +1,35 @@
-/* ========== Global Styles ========== */
+/* ===================================
+   Global Variables
+=================================== */
 
 :root {
   --color-bg: #ffffff;
-  --color-text: #111827; /* dark charcoal */
-  --color-accent: #b76e79; /* muted dark pink */
-  --color-accent-hover: #a05565; /* slightly darker pink for hover */
-  --color-muted: #6b7280; /* neutral gray */
-  --color-border: #d1d5db; /* light gray for borders */
-  
+  --color-text: #111827;       /* Dark charcoal */
+  --color-accent: #b76e79;     /* Muted dark pink */
+  --color-accent-hover: #a05565;
+  --color-muted: #6b7280;      /* Gray text */
+  --color-border: #e5e7eb;     /* Light gray border */
+  --color-section-bg: #f9fafb; /* Light gray for subtle section backgrounds */
+
   --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   --font-heading: 'Nunito Sans', var(--font-sans);
-  
+
   --heading-weight: 700;
   --body-weight: 400;
-  
+
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 2rem;
   --space-lg: 4rem;
   --space-xl: 6rem;
+
+  --transition-fast: 0.2s ease-in-out;
+  --transition-smooth: 0.4s ease;
 }
 
+/* ===================================
+   Reset & Base
+=================================== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -33,9 +42,22 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
-/* Headings */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+/* ===================================
+   Typography
+=================================== */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: var(--heading-weight);
@@ -44,59 +66,33 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
+h1 { font-size: 3rem; }
+h2 { font-size: 2.25rem; }
 h3 { font-size: 1.75rem; }
 h4 { font-size: 1.5rem; }
 
-/* Paragraphs */
 p {
   margin-bottom: var(--space-md);
+  color: var(--color-muted);
+  font-size: 1.05rem;
 }
 
-/* Links / Buttons */
-a {
-  color: var(--color-accent);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: var(--color-accent-hover);
-}
-
-/* Button style (if you use <button> or anchor as button) */
-.button, button {
-  display: inline-block;
-  padding: var(--space-xs) var(--space-md);
-  font-size: 1rem;
-  font-weight: var(--heading-weight);
-  background-color: var(--color-accent);
-  color: white;
-  border: none;
-  border-radius: 0.375rem; /* 6px */
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.button:hover, button:hover {
-  background-color: var(--color-accent-hover);
-}
-
-/* Layout / Sections */
-.section {
-  padding: var(--space-lg) var(--space-sm);
-}
-
+/* ===================================
+   Layout / Containers
+=================================== */
 .container {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--space-sm);
-  padding-right: var(--space-sm);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--space-sm);
 }
 
-/* Hero / Header Section */
+.section {
+  padding: var(--space-xl) 0;
+}
+
+/* ===================================
+   Hero Section
+=================================== */
 .hero {
   text-align: center;
   padding: var(--space-xl) 0;
@@ -107,42 +103,70 @@ a:hover {
 }
 
 .hero p {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: var(--color-muted);
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-/* Portfolio / Projects Grid */
+/* ===================================
+   Buttons
+=================================== */
+.button, button {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  font-size: 1rem;
+  font-weight: var(--heading-weight);
+  background-color: var(--color-accent);
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.button:hover, button:hover {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-2px);
+}
+
+/* ===================================
+   Project Grid
+=================================== */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
 }
 
 .project-card {
-  background-color: #f9fafb;
+  background-color: var(--color-section-bg);
   border: 1px solid var(--color-border);
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   padding: var(--space-md);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .project-card h3 {
   margin-bottom: var(--space-xs);
+  font-size: 1.25rem;
 }
 
 .project-card p {
   color: var(--color-muted);
 }
 
-/* About / Contact Section */
+/* ===================================
+   About / Contact Section
+=================================== */
 .about {
-  background-color: #f3f4f6; /* very light gray */
-  padding: var(--space-lg) 0;
+  background-color: var(--color-section-bg);
 }
 
 .about .container {
@@ -156,25 +180,39 @@ a:hover {
   max-width: 150px;
   border-radius: 50%;
   margin-bottom: var(--space-md);
+  border: 2px solid var(--color-accent);
 }
 
 .about h2 {
   margin-bottom: var(--space-sm);
 }
 
-/* Footer */
+.about p {
+  max-width: 600px;
+}
+
+/* ===================================
+   Footer
+=================================== */
 .footer {
-  background-color: #111827; /* dark charcoal */
-  color: white;
+  background-color: #111827;
+  color: #ffffff;
   padding: var(--space-md) 0;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
 }
 
 .footer a {
   color: var(--color-accent);
 }
 
+.footer a:hover {
+  color: var(--color-accent-hover);
+}
+
+/* ===================================
+   Responsive
+=================================== */
 @media (min-width: 768px) {
   .about .container {
     flex-direction: row;
@@ -183,3 +221,4 @@ a:hover {
     align-items: center;
   }
 }
+
