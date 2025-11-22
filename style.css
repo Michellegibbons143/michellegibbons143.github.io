@@ -206,18 +206,11 @@ header {
 
 /* Footer */
 footer {
-    height: 40px;          /* fixed height for the footer */
-    padding: 0;            /* remove padding */
-    display: flex;         /* use flex to center content */
-    justify-content: center;
-    align-items: center;
-    background-color: #222;
+    padding: 1rem 2rem;
+    text-align: center;
     color: #fff;
     font-size: 0.9rem;
-}
-footer p {
-    margin: 0;             /* remove paragraph margin */
-    line-height: 1;        /* tighten text spacing */
+    background: radial-gradient(circle at top, #555 0%, #222 100%);
 }
 
 /* Responsive */
