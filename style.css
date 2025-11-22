@@ -17,9 +17,9 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #fff;
     z-index: 100;
-    border-bottom: 1px solid #ddd;
+    background: radial-gradient(circle, #555 0%, #222 100%); /* match hero */
+    border-bottom: none; /* remove previous white border */
 }
 
 .navbar {
@@ -29,16 +29,18 @@ header {
     padding: 1rem 2rem;
 }
 
-.navbar .logo a {
-    font-weight: 700;
-    font-size: 1rem;
-    color: #222;
+.navbar .logo a,
+.navbar ul li a {
+    color: #fff; /* white text by default */
     text-decoration: none;
-    transition: color 0.3s;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
-.navbar .logo a:hover {
-    color: #b56576;
+.navbar .logo a:hover,
+.navbar ul li a:hover {
+    color: #b56576; /* muted dark pink accent on hover */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4); /* subtle white glow */
 }
 
 .navbar ul {
@@ -48,17 +50,6 @@ header {
 
 .navbar ul li {
     margin-left: 2rem;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #222;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-.navbar ul li a:hover {
-    color: #b56576; /* muted dark pink accent */
 }
 
 /* Hero Section */
