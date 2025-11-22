@@ -22,11 +22,23 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navbar .logo a {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #222;
+    text-decoration: none;
+}
+
 .navbar ul {
     display: flex;
-    justify-content: flex-end;
     list-style: none;
-    padding: 1rem 2rem;
 }
 
 .navbar ul li {
@@ -50,10 +62,11 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh; /* shorter hero block */
     text-align: center;
     padding: 0 2rem;
-    background-color: #f8f8f8;
+    background-color: #222; /* darker */
+    color: #fff; /* white text */
 }
 
 .hero h1 {
@@ -65,7 +78,7 @@ header {
 .hero h2 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #555;
+    color: #ddd;
 }
 
 /* About Section */
@@ -80,19 +93,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     max-width: 1000px;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     gap: 2rem;
-}
-
-.about-text {
-    flex: 1 1 400px;
-    max-width: 500px;
-}
-
-.about-text p {
-    margin-bottom: 1.5rem;
-    color: #333;
 }
 
 .about-image {
@@ -104,6 +106,15 @@ header {
     max-width: 250px;
     border-radius: 50%;
     border: 3px solid #b56576; /* subtle pink accent */
+}
+
+.about-text {
+    flex: 2 1 500px;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    color: #333;
 }
 
 /* Projects Section */
