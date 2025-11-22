@@ -101,14 +101,14 @@ header {
 }
 
 .about-image img {
-    max-width: 550px;
+    max-width: 400px;
     border-radius: 50%;
     border: none;
 }
 
 .about-text {
     flex: 2 1 350px;      /* allows side-by-side more easily */
-    max-width: 500px;     /* keeps text readable instead of stretched */
+    max-width: 550px;     /* keeps text readable instead of stretched */
     text-align: left;
     margin-left: 1.5rem;
 }
