@@ -206,11 +206,16 @@ header {
 
 /* Footer */
 footer {
-    padding: 1rem;
+    padding: 0.5rem 1rem; /* less vertical padding */
     text-align: center;
     background-color: #222;
     color: #fff;
     font-size: 0.9rem;
+    line-height: 1; /* tighter line height */
+}
+
+footer p {
+    margin: 0; /* remove default paragraph margin */
 }
 
 /* Responsive */
