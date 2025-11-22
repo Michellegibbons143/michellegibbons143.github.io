@@ -18,29 +18,29 @@ header {
     top: 0;
     width: 100%;
     z-index: 100;
-    background-color: #222; /* solid dark charcoal */
-    border-bottom: none; /* remove previous white border */
+    background-color: transparent; /* made header transparent */
+    border-bottom: none;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 2rem; /* reduce vertical padding to make header thinner */
+    padding: 0.5rem 2rem;
 }
 
 .navbar .logo a,
 .navbar ul li a {
-    color: #fff; /* white text by default */
+    color: #fff;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.9rem; /* slightly smaller text for thinner header */
+    font-size: 0.9rem;
     transition: all 0.3s ease;
 }
 
 .navbar .logo a:hover,
 .navbar ul li a:hover {
-    color: #b56576; /* muted dark pink accent on hover */
+    color: #b56576;
 }
 
 .navbar ul {
@@ -49,9 +49,8 @@ header {
 }
 
 .navbar ul li {
-    margin-left: 1.5rem; /* slightly tighter spacing between links */
+    margin-left: 1.5rem;
 }
-
 
 /* Hero Section */
 .hero {
@@ -59,10 +58,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh; /* shorter hero block */
+    height: 50vh;
     text-align: center;
     padding: 0 2rem;
-    /* radial gradient: center lighter, edges darker */
     background: radial-gradient(circle, #555 0%, #222 100%);
     color: #fff;
 }
@@ -101,9 +99,9 @@ header {
 }
 
 .about-image img {
-    max-width: 250px;
+    max-width: 300px; /* made image bigger */
     border-radius: 50%;
-    border: 3px solid #b56576; /* subtle pink accent */
+    border: none; /* removed border */
 }
 
 .about-text {
@@ -213,7 +211,7 @@ footer {
     }
 
     .about-image img {
-        max-width: 200px;
+        max-width: 250px; /* responsive adjustment */
     }
 
     .projects-grid {
