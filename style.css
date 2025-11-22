@@ -71,7 +71,7 @@ header {
     text-align: center;
     padding: 0 2rem;
     /* radial gradient: center lighter, edges darker */
-    background: radial-gradient(circle, #333 0%, #222 100%);
+    background: radial-gradient(circle, #555 0%, #222 100%);
     color: #fff;
 }
 
