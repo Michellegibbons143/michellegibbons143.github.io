@@ -91,7 +91,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     max-width: 1000px;
-    align-items: flex-start;
+    align-items: center; /* vertically centers image and text */
     gap: 2rem;
 }
 
@@ -101,18 +101,22 @@ header {
 }
 
 .about-image img {
-    max-width: 550px; /* large profile pic */
+    max-width: 550px; /* keep your large profile pic */
     border-radius: 50%;
-    border: none; /* removed border */
+    border: none;
 }
 
 .about-text {
     flex: 2 1 500px;
+    max-width: 500px; /* keeps text from stretching too wide */
+    text-align: left; /* natural alignment */
+    margin-left: 1.5rem; /* space between image and text */
 }
 
 .about-text p {
     margin-bottom: 1.5rem;
     color: #333;
+    line-height: 1.6; /* subtle improvement for readability */
 }
 
 /* Projects Section */
@@ -214,6 +218,13 @@ footer {
 
     .about-image img {
         max-width: 400px; /* responsive adjustment */
+        margin-bottom: 2rem; /* spacing below image */
+    }
+
+    .about-text {
+        text-align: center; /* better for mobile */
+        margin-left: 0;
+        max-width: 100%;
     }
 
     .projects-grid {
