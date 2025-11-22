@@ -18,8 +18,9 @@ header {
     top: 0;
     width: 100%;
     z-index: 100;
-    background-color: transparent; /* made header transparent */
+    background-color: rgba(34, 34, 34, 0.7); /* semi-transparent dark background for readability */
     border-bottom: none;
+    backdrop-filter: blur(5px); /* subtle blur for professional look */
 }
 
 .navbar {
@@ -33,8 +34,8 @@ header {
 .navbar ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
+    font-weight: 400; /* not bold */
+    font-size: 1rem; /* slightly larger */
     transition: all 0.3s ease;
 }
 
@@ -99,9 +100,9 @@ header {
 }
 
 .about-image img {
-    max-width: 300px; /* made image bigger */
+    max-width: 550px; /* almost double previous 300px */
     border-radius: 50%;
-    border: none; /* removed border */
+    border: none;
 }
 
 .about-text {
@@ -211,7 +212,7 @@ footer {
     }
 
     .about-image img {
-        max-width: 250px; /* responsive adjustment */
+        max-width: 400px; /* responsive adjustment */
     }
 
     .projects-grid {
