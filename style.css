@@ -18,7 +18,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 100;
-    background: radial-gradient(circle, #555 0%, #222 100%); /* match hero */
+    background: #555 /* radial-gradient(circle, #555 0%, #222 100%); /* match hero */
     border-bottom: none; /* remove previous white border */
 }
 
@@ -40,7 +40,7 @@ header {
 .navbar .logo a:hover,
 .navbar ul li a:hover {
     color: #b56576; /* muted dark pink accent on hover */
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4); /* subtle white glow */
+    /* text-shadow: 0 0 8px rgba(255, 255, 255, 0.4); /* subtle white glow */
 }
 
 .navbar ul {
