@@ -34,8 +34,8 @@ header {
 .navbar ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: 400; /* not bold */
-    font-size: 1rem; /* slightly larger */
+    font-weight: 400;
+    font-size: 1rem;
     transition: all 0.3s ease;
 }
 
@@ -61,8 +61,7 @@ header {
     align-items: center;
     height: 50vh;
     text-align: center;
-    padding: 0 2rem; /* horizontal padding only */
-    margin: 0; /* flush with top */
+    padding: 0 2rem;
     background: radial-gradient(circle, #615656 0%, #2b2626 100%);
     color: #fff;
 }
@@ -90,9 +89,10 @@ header {
 .about-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1000px;
-    align-items: center; /* vertically centers image and text */
+    max-width: 1000px;   /* keeps layout from stretching too wide */
+    margin: 0 auto;      /* centers the entire section */
     gap: 2rem;
+    align-items: center;
 }
 
 .about-image {
@@ -101,22 +101,22 @@ header {
 }
 
 .about-image img {
-    max-width: 550px; /* keep your large profile pic */
+    max-width: 550px;
     border-radius: 50%;
     border: none;
 }
 
 .about-text {
-    flex: 2 1 500px;
-    max-width: 500px; /* keeps text from stretching too wide */
-    text-align: left; /* natural alignment */
-    margin-left: 1.5rem; /* space between image and text */
+    flex: 2 1 350px;      /* allows side-by-side more easily */
+    max-width: 500px;     /* keeps text readable instead of stretched */
+    text-align: left;
+    margin-left: 1.5rem;
 }
 
 .about-text p {
     margin-bottom: 1.5rem;
     color: #333;
-    line-height: 1.6; /* subtle improvement for readability */
+    line-height: 1.6;
 }
 
 /* Projects Section */
@@ -217,12 +217,12 @@ footer {
     }
 
     .about-image img {
-        max-width: 400px; /* responsive adjustment */
-        margin-bottom: 2rem; /* spacing below image */
+        max-width: 400px;
+        margin-bottom: 2rem;
     }
 
     .about-text {
-        text-align: center; /* better for mobile */
+        text-align: center;
         margin-left: 0;
         max-width: 100%;
     }
