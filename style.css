@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.6;
     color: #222;
     background-color: #fff;
@@ -34,6 +34,11 @@ header {
     font-size: 1rem;
     color: #222;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar .logo a:hover {
+    color: #b56576;
 }
 
 .navbar ul {
@@ -65,8 +70,9 @@ header {
     height: 50vh; /* shorter hero block */
     text-align: center;
     padding: 0 2rem;
-    background-color: #222; /* darker */
-    color: #fff; /* white text */
+    /* radial gradient: center lighter, edges darker */
+    background: radial-gradient(circle, #333 0%, #222 100%);
+    color: #fff;
 }
 
 .hero h1 {
