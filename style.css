@@ -14,8 +14,9 @@ body {
 
 /* Navigation */
 header {
-    position: sticky;
+    position: fixed; /* changed from sticky to fixed */
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 100;
     background-color: rgba(43, 38, 38, 0.7); /* semi-transparent dark background for readability */
@@ -23,6 +24,33 @@ header {
     backdrop-filter: blur(5px); /* subtle blur for professional look */
 }
 
+/* Push content below header so it’s not hidden behind it */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+    padding: 0 2rem;
+    margin-top: 80px; /* push hero down by header height */
+    background: radial-gradient(circle, #615656 0%, #2b2626 100%);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ddd;
+}
+
+/* Navbar links */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -51,31 +79,6 @@ header {
 
 .navbar ul li {
     margin-left: 1.5rem;
-}
-
-/* Hero Section */
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    text-align: center;
-    padding: 0 2rem;
-    background: radial-gradient(circle, #615656 0%, #2b2626 100%);
-    color: #fff;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.hero h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #ddd;
 }
 
 /* About Section */
