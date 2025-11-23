@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yelp Project - Michelle Gibbons Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    -- Google font
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
+    -- Favicon
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+-- Navigation
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Michelle Gibbons - Portfolio</a>
+        </div>
+        <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="yelp.html">Yelp Project</a></li>
+        </ul>
+    </nav>
+</header>
+
+-- Hero section
+<section class="hero">
+    <h1>Yelp End-to-End Analytics Project</h1>
+    <h2>Data Engineering | Analytics Engineering | Dashboard Insights</h2>
+</section>
+
+-- Project section
+<section class="projects">
+    <h2>Explore the Yelp Project</h2>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+        This project covers the full data lifecycle: ingesting Yelp API data into Snowflake, cleaning & transforming it through Bronze/Silver/Gold layers, and ending with dashboard insights.
+    </p>
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <h3>Data Pipeline</h3>
+            <p>End-to-end engineering pipeline: API ingestion, JSON parsing, data validation, Snowflake loading, and Bronze/Silver/Gold architecture.</p>
+            <p class="tools">Tools: Python, Snowflake, GitHub Actions</p>
+            <a href="yelp-end-to-end-project/01_data_engineering" class="project-link">View Section</a>
+        </div>
+
+        <div class="project-card">
+            <h3>dbt Transformations</h3>
+            <p>Full dbt modeling suite including staging, transformations, snapshots, tests, and documentation for a scalable warehouse.</p>
+            <p class="tools">Tools: dbt, SQL, Snowflake</p>
+            <a href="yelp-end-to-end-project/02_dbt" class="project-link">View Section</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Insights & Dashboard</h3>
+            <p>Interactive dashboard and business insights built on the transformed Yelp dataset, powering real analytical storytelling.</p>
+            <p class="tools">Tools: SQL, Power BI / Tableau</p>
+            <a href="yelp-end-to-end-project/03_analytics" class="project-link">View Section</a>
+        </div>
+
+    </div>
+</section>
+
+-- Footer
+<footer>
+    <p>&copy; 2025 Michelle Gibbons. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
