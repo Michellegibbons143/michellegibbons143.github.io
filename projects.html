@@ -27,55 +27,30 @@
     </nav>
 </header>
 
-<!-- Hero section -->
-<section class="hero">
-    <h1>Recent Projects</h1>
-    <h2></h2>
-</section>
-
-<!-- Style Section (updated) -->
-<section class="style-section">
-    <h2>Explore My Yelp Full-Stack Analytics Project</h2>
-    <p>Select one of the options below to explore different project components:</p>
-    <div class="style-container">
-        <button class="style-button">
-            Data Pipeline <i class="fas fa-cogs"></i>
-        </button>
-        <button class="style-button">
-            Data Modeling <i class="fas fa-database"></i>
-        </button>
-        <button class="style-button">
-            Analysis & Insights <i class="fas fa-chart-line"></i>
-        </button>
-    </div>
-</section>
-
 <!-- Project section -->
 <section class="projects">
     <h2>Explore My Yelp Full-Stack Analytics Project</h2>
-    <p style="text-align: center; max-width: 550px; margin: 0 auto;">
-        This project covers pipelines, modeling, and insights.
+    <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+        The Yelp Full-Stack Analytics Project demonstrates a complete, production-style data pipeline from ingestion to insights. Python scripts extract business and review data from the Yelp API, with GitHub Actions automating loading into Snowflake’s bronze layer, where JSONs are parsed and lightly cleaned. Snowflake stored procedures and tasks handle normalization from bronze to silver, and DBT transforms silver into gold tables ready for analysis. The final data powers a dashboard and supports ad hoc analyses, enabling insights into ratings trends, review sentiment, and business categories. This project demonstrates the full workflow of ingestion, transformation, and analytics in a production-style environment.
     </p>
     <br><br>
     <div class="projects-grid">
 
         <div class="project-card">
-            <h3>Data Pipeline</h3>
+            <h3>Data Ingestion</h3>
             <p>test</p>
             <p class="tools">Tools: Python, Snowflake, GitHub Actions</p>
             <a href="yelp-end-to-end-project/01_data_engineering" class="project-link">View Section</a>
         </div>
 
         <div class="project-card">
-            <h3>Data Modeling</h3>
-            <p>test.</p>
+            <h3>Data Transformation</h3>
             <p class="tools">Tools: dbt, SQL, Snowflake</p>
             <a href="yelp-end-to-end-project/02_dbt" class="project-link">View Section</a>
         </div>
 
         <div class="project-card">
-            <h3>Analysis & Insights</h3>
-            <p>test</p>
+            <h3>Analytics & Visualization</h3>
             <p class="tools">Tools: SQL, Power BI / Tableau</p>
             <a href="yelp-end-to-end-project/03_analytics" class="project-link">View Section</a>
         </div>
