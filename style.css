@@ -200,18 +200,44 @@ header {
     text-decoration: underline;
 }
 
-/* Style Section */
+/* Style Section - Updated */
 .style-section {
     padding: 4rem 2rem;
     background-color: #fff;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.style-section::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(181,101,118,0.15) 0%, transparent 70%);
+    top: -50px;
+    right: -50px;
+    border-radius: 50%;
+    z-index: 0;
 }
 
 .style-section h2 {
-    font-size: 1.75rem; /* medium-size title */
-    font-weight: 400;   /* regular font weight */
-    margin-bottom: 2rem;
+    font-size: 2rem;       /* medium-large title */
+    font-weight: 600;      /* slightly bolder */
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
     color: #2b2626;
+    position: relative;
+    z-index: 1;
+}
+
+.style-section p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #615656;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .style-container {
@@ -219,22 +245,39 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    position: relative;
+    z-index: 1;
 }
 
 .style-button {
-    background-color: #b56576;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;  /* small buttons */
-    border-radius: 6px;
+    background-color: #fff;
+    color: #b56576;
+    border: 2px solid #b56576;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
     font-size: 0.9rem;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .style-button:hover {
-    background-color: #91515f;
-    transform: translateY(-2px);
+    background-color: #b56576;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.style-button i {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.style-button:hover i {
+    transform: rotate(20deg) scale(1.1);
 }
 
 /* Footer */
