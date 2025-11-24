@@ -200,7 +200,7 @@ header {
     text-decoration: underline;
 }
 
-/* Style Section - Original fancy buttons */
+/* Style Section - Updated */
 .style-section {
     padding: 4rem 2rem;
     background-color: #fff;
@@ -222,8 +222,8 @@ header {
 }
 
 .style-section h2 {
-    font-size: 2rem;       
-    font-weight: 600;      
+    font-size: 2rem;       /* medium-large title */
+    font-weight: 600;      /* slightly bolder */
     margin-bottom: 1rem;
     letter-spacing: 0.5px;
     color: #2b2626;
@@ -289,90 +289,7 @@ footer {
     background: radial-gradient(circle at top, #615656 0%, #2b2626 100%);
 }
 
-/* ------------------------ NEW / UPDATED STYLES ------------------------ */
-
-/* Beige background for project section */
-.beige-bg {
-    background-color: #f5f0e6;
-    padding: 6rem 2rem;
-    text-align: center;
-}
-
-.project-button-container {
-    display: flex;
-    justify-content: center;
-}
-
-.project-main-button {
-    background-color: #b56576; /* accent color */
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 1rem 2.5rem;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-}
-
-.project-main-button:hover {
-    background-color: #a44f66;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-}
-
-/* Upgraded contact section */
-.upgraded-contact {
-    background-color: #fff;
-    padding: 5rem 2rem;
-    text-align: center;
-}
-
-.upgraded-contact h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.contact-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-.contact-btn {
-    text-decoration: none;
-    padding: 0.8rem 2rem;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 1rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-}
-
-.email-btn {
-    background-color: #2b2626;
-    color: #fff;
-}
-
-.email-btn:hover {
-    background-color: #44403c;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
-
-.linkedin-btn {
-    background-color: #0077b5;
-    color: #fff;
-}
-
-.linkedin-btn:hover {
-    background-color: #005983;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
-
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
@@ -398,10 +315,5 @@ footer {
     .style-container {
         flex-direction: column;
         align-items: center;
-    }
-
-    .contact-buttons {
-        flex-direction: column;
-        gap: 1rem;
     }
 }
