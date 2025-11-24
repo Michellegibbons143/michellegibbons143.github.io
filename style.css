@@ -8,7 +8,7 @@
 body {
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
-    color: #2b2626;
+    color: #34343a;
     background-color: #fff;
 }
 
@@ -18,7 +18,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 100;
-    background-color: rgba(43, 38, 38, .95); /* semi-transparent warm charcoal */
+    background-color: rgba(52, 52, 58, .95); /* semi-transparent warm charcoal */
     border-bottom: none;
     backdrop-filter: blur(5px); /* subtle blur for professional look */
 }
@@ -62,7 +62,7 @@ header {
     height: 35vh;
     text-align: center;
     padding: 0 2rem;
-    background: radial-gradient(circle, #615656 0%, #2b2626 100%);
+    background: radial-gradient(circle, #6a686f 0%, #34343a 100%);
     color: #fff;
 }
 
@@ -160,7 +160,7 @@ header {
 
 .project-card p {
     margin-bottom: 1rem;
-    color: #615656;
+    color: #6a686f;
 }
 
 .project-card .tools {
@@ -226,7 +226,7 @@ header {
     font-weight: 600;      /* slightly bolder */
     margin-bottom: 1rem;
     letter-spacing: 0.5px;
-    color: #2b2626;
+    color: #34343a;
     position: relative;
     z-index: 1;
 }
@@ -234,7 +234,7 @@ header {
 .style-section p {
     font-size: 1rem;
     font-weight: 400;
-    color: #615656;
+    color: #6a686f;
     margin-bottom: 2rem;
     position: relative;
     z-index: 1;
@@ -286,7 +286,7 @@ footer {
     text-align: center;
     color: #fff;
     font-size: 0.9rem;
-    background: radial-gradient(circle at top, #615656 0%, #2b2626 100%);
+    background: radial-gradient(circle at top, #6a686f 0%, #34343a 100%);
 }
 
 /* Responsive */
