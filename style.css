@@ -317,3 +317,13 @@ footer {
         align-items: center;
     }
 }
+
+/* Remove underline for links inside style-button but keep hover effects */
+.style-button a {
+    text-decoration: none; /* no underline normally */
+    color: inherit;        /* keeps button text color */
+}
+
+.style-button a:hover {
+    text-decoration: none; /* no underline on hover */
+}
