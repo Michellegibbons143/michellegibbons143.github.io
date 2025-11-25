@@ -285,6 +285,13 @@ header {
     transform: rotate(20deg) scale(1.1);
 }
 
+a.style-button,
+a.style-button:hover,
+a.style-button:visited,
+a.style-button:active {
+    text-decoration: none;
+}
+
 /* Footer */
 footer {
     padding: 1rem 2rem;
