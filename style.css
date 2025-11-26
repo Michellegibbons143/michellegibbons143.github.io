@@ -292,6 +292,21 @@ a.style-button:active {
     text-decoration: none;
 }
 
+/* Recent Project Link */
+    .projects-link {
+        position: relative;       /* needed if you want to add any pseudo-elements later */
+        display: inline-block;    /* ensures width behaves correctly */
+        text-decoration: none;    /* remove underline */
+        color: #272223;           /* charcoal, same as header text */
+        font-weight: 600;         /* slightly bolder for emphasis */
+        transition: color 0.25s ease, transform 0.25s ease; /* smooth hover effect */
+}
+    
+    .projects-link:hover {
+        color: #b56576;           /* pink accent on hover */
+        transform: translateY(-2px); /* subtle lift */
+}
+
 /* Footer */
 footer {
     padding: 1rem 2rem;
@@ -327,18 +342,4 @@ footer {
     .style-container {
         flex-direction: column;
         align-items: center;
-    }
-/* Recent Project Link */
-    .projects-link {
-        position: relative;       /* needed if you want to add any pseudo-elements later */
-        display: inline-block;    /* ensures width behaves correctly */
-        text-decoration: none;    /* remove underline */
-        color: #272223;           /* charcoal, same as header text */
-        font-weight: 600;         /* slightly bolder for emphasis */
-        transition: color 0.25s ease, transform 0.25s ease; /* smooth hover effect */
-    }
-    
-    .projects-link:hover {
-        color: #b56576;           /* pink accent on hover */
-        transform: translateY(-2px); /* subtle lift */
     }
