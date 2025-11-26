@@ -330,15 +330,15 @@ footer {
     }
 /* Recent Project Link */
     .projects-link {
-        text-decoration: none;
-        color: inherit;
-        transition: color 0.25s ease, transform 0.25s ease;
+        position: relative;       /* needed if you want to add any pseudo-elements later */
+        display: inline-block;    /* ensures width behaves correctly */
+        text-decoration: none;    /* remove underline */
+        color: #272223;           /* charcoal, same as header text */
+        font-weight: 600;         /* slightly bolder for emphasis */
+        transition: color 0.25s ease, transform 0.25s ease; /* smooth hover effect */
     }
     
     .projects-link:hover {
-        color: #b56576;
-        transform: translateY(-2px);
-    }
-    .projects-link:hover::after {
-        width: 100%;
+        color: #b56576;           /* pink accent on hover */
+        transform: translateY(-2px); /* subtle lift */
     }
