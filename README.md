@@ -12,4 +12,4 @@ The portfolio highlights my skills in **data analytics and engineering**, showca
 
 ## ⚡ Note
 
-This repo is for hosting and maintaining the portfolio website. For individual project code, please visit my **[GitHub projects repositories](https://github.com/michellegibbons143?tab=repositories)**.
+This repo is for hosting and maintaining the portfolio website. For individual project code, please visit my **[GitHub](https://github.com/Michellegibbons143)**.
