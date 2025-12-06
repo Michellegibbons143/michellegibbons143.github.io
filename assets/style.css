@@ -78,6 +78,10 @@ header {
     color: #ddd;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* About Section */
 .about {
     padding: 4rem 2rem;
